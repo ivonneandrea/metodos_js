@@ -31,7 +31,7 @@ borrarBoton.textContent = "X";
 borrarBoton.addEventListener("click", () => borrarTarea(index));
 li.appendChild(borrarBoton);
 
-borrarBoton.classList.add ("boton-rojo");
+borrarBoton.classList.add ("button-x");
 
 if (tarea.completado) {
 li.classList.add ("completed");
