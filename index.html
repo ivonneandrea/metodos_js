@@ -7,24 +7,27 @@
 
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+  <style>
+  .boton-rojo{
+    background-color: white;
+    color: red;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 5% ;
+  }
+    
+</style>
   <body>
-    <main>
-      <div class="container">
-        <article class="title">
-          <h1>Todo List</h1>
-        </article>
+     <h1>Lista de Tareas</h1>
+ 
+    <h3>Nueva Tarea</h3>
+      <input type="text" id="nuevaTarea">
+   <button onclick="agregarTarea ()">Agregar</button>
+   <ul id="tareas"></ul>
+   <p>Total : <span id="totalTareas">0</span></p>
+   <p>Realizadas <span id="totalTareasRealizadas">0</span></p>   
 
-        <article>
-          <p>Nueva tarea</p>
-          <input id="nuevoTareas" />
-          <button id="agregarTareas">Agregar</button>
-          <p>Total :</p>
-          <p>Realizadas:</p>
-          <ul id="invitados"></ul>
-        </article>
-        <article></article>
-      </div>
-    </main>
+  
 
     <script src="assets/js/script.js"></script>
   </body>
